@@ -1,0 +1,211 @@
+@media (max-width: 992px) {
+
+    /* Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов */
+
+
+    .main-block-img img {
+        object-position: right;
+    }
+
+
+    .main-block-body {
+        padding: 130px 0px 140px 0px;
+    }
+
+    .main-block-title {
+        font-size: 55px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    .header-navigation {
+        min-height: 65px;
+    }
+
+    /* Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей. Это множество мобильных устройств */
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navigation-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        /*  top: 104px; */
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navigation-item {
+        margin: 20px 0;
+    }
+
+    .navigation-link {
+        font-size: 20px;
+    }
+
+    .navigation-link:hover {
+        color: #252B42;
+    }
+
+    .navigation-menu.active {
+        left: 0;
+    }
+
+    .header-navigation {
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+
+    .main-block-img img {
+        object-position: center;
+    }
+
+    .main-block-texts {
+        max-width: 300px;
+    }
+
+    .main-block-buttons {
+        max-width: 300px;
+    }
+
+    .main-block-body {
+        padding: 80px 0px 100px 0px;
+
+    }
+
+    .main-block-title {
+        font-size: 44px;
+    }
+
+    .main-block-text {
+        font-size: 16px;
+    }
+
+    .main-block-text,
+    .main-block-title {
+        margin-bottom: 25px;
+    }
+
+    .button-learn {
+        background: rgba(255, 255, 255, 0.5);
+
+    }
+
+    .navigation-icon {
+        display: block;
+        z-index: 5;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+
+    }
+
+    /*   .button-get {
+        width: 154px;
+        height: 40px;
+        padding: 10px 15px;
+    }
+
+
+    .button-learn {
+        width: 131px;
+        height: 40px;
+        padding: 10px 15px;
+    } */
+
+    /* .header-container {
+        justify-content: space-between;
+    } */
+
+    .button-get,
+    .button-learn {
+        padding: 10px 15px;
+        height: 40px;
+    }
+
+
+}
+
+
+@media (max-width: 479px) {
+
+    .header-navigation {
+        min-height: 50px;
+    }
+
+    .header-logo {
+        font-size: 21px;
+    }
+
+    .main-block-title {
+        font-size: 34px;
+    }
+
+
+    .main-block-img img {
+        object-position: center;
+    }
+
+    .main-block-body {
+        padding: 60px 0px 60px 0px;
+
+    }
+
+
+
+    .main-block-text {
+        font-size: 16px;
+        /*    text-shadow:
+            1px 0 2px rgb(255, 255, 255),
+            0 1px 2px rgb(255, 255, 255),
+            -1px 0 2px rgb(255, 255, 255),
+            0 -1px 2px rgb(255, 255, 255); */
+    }
+
+    /*  .main-block-body>*:not(:last-child) {} */
+
+
+    .main-block-texts {
+        max-width: 230px;
+
+    }
+
+    .main-block-text,
+    .main-block-title {
+        margin-bottom: 20px;
+    }
+
+    .main-block-buttons {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        /*  gap: 10px; */
+
+    }
+
+
+
+}
